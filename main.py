@@ -52,7 +52,7 @@ def call_groq(system: str, user: str, max_tokens: int = 1200) -> str:
     except Exception as e:
         return f"Error: {str(e)}"
 
-# ── Review Agents ─────────────────────────────────────────────────────────────
+# ── Review Agents 
 
 async def review_bugs(code: str, language: str) -> dict:
     result = call_groq(
